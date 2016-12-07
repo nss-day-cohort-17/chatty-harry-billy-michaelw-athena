@@ -1,0 +1,92 @@
+/************************
+LIGHT STYLES
+************************/
+
+body {
+	font-family: Helvetica, sans-serif;
+	margin: 0;
+	background-color: lightgrey;
+}
+
+h1 {
+	text-align: center;
+}
+
+#wrapper {
+	background-color: white;
+	width: 80%;
+	margin-left: 10%;
+
+}
+
+#headerNavigation {
+	background-color: darkgrey;
+	width: 100%;
+	height: 250px;
+	background-image: url(http://www.godisreal.today/wp-content/uploads/2013/12/proof-of-heaven-real2-720x420.jpg);
+	background-repeat: none;
+	text-align: center;
+}
+
+#messageWrapper {
+	width: 100%;
+	height: 500px;
+	padding: 5%;
+}
+
+
+#holdingCheckboxes {
+	padding-top: 13%;
+}
+
+
+
+
+#holdingMessageAndButton {
+	padding-top: 1.5%;
+
+}
+
+
+
+#darkCheckbox {
+
+}
+
+
+#enterMessageTextBox {
+	font-size: 2em;
+
+}
+
+
+#clearMessagesButton {
+	padding: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+/************************
+DARK STYLES
+************************/
+
+/************************
+NAVIGATION
+************************/
+
+/************************
+LIGHT STYLES
+************************/
+
+/************************
+FOOTER
+************************/
+
+#footer
