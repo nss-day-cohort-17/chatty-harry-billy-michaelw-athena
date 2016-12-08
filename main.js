@@ -68,7 +68,12 @@ function clearContent()
 function removeTheMessageBubbles(e) {
 
   var clearTheBox = document.getElementById('messageWrapper')
+      var disable;
       clearTheBox.innerHTML =""
+       if (clearTheBox.innerHTML ==="") {
+
+       disable =   document.getElementsByClassName("disableTheButton")[0].setAttribute("disabled", true);
+     }
 //
 
 
@@ -108,9 +113,10 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
           document.getElementById("messageWrapper").innerHTML = theFirstFiveMessages
 
 
+    }
+
+
             }  // endforloop
 
           document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
     }
-
-    document.getElementsByClassName("disableTheButton")[0].setAttribute("disabled", true);
