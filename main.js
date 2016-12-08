@@ -31,7 +31,7 @@ messageTextBox.addEventListener('keypress', function(e) {
 
                           //   // // //  and put iti into the #messagewrapper
 
-                                document.getElementById("sectionWrapper").innerHTML +=  newVariable
+                                document.getElementById("messageWrapper").innerHTML +=  newVariable
 
                                     clearContent()
 
@@ -48,14 +48,20 @@ function clearContent()
 
 
 //
-//this is the part where the  #clearbutton clears the messages
+//this is the part where the  #clearbutton clears the messages in #messagewrapper
 //
-function removeTheMessageBubbles() {
+function removeTheMessageBubbles(e) {
+
   var clearTheBox = document.getElementById('messageWrapper')
-  clearTheBox.innerHTML = ""
+      clearTheBox.innerHTML =""
+//
+
+
+
 
 
 }
+
 
 document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
 
@@ -86,9 +92,10 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
            }  // endforloop
 
 
-          document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
+          document.getElementById("messageWrapper").innerHTML = theFirstFiveMessages
 
     }
 
 
     // i need to call the json function when the clear button is clicked
+    // document.getElementsByClassName("disableTheButton")[0].setAttribute("disabled", true);
