@@ -116,7 +116,7 @@ TEXT MESSAGE STYLES
 
 #sectionWrapper {
   max-width: 50%;
-  margin: 50px auto;
+  margin: 0 20%;
   word-wrap: break-word;
   margin-bottom: 20px;
   line-height: 24px;
@@ -141,10 +141,12 @@ TEXT MESSAGE STYLES
 .from-them {
   position: relative;
   padding: 10px 20px;
-  background: #E5E5EA;
+  background: white;
+  color: black;
   border-radius: 25px;
   color: black;
   float: left;
+  margin-bottom: 5px;
 }
 
 

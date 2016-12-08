@@ -2,7 +2,7 @@
     "lightMessages": [
         {
             "sender": "Luke",
-            "content": "Welcome to The Force, dear one"
+            "content": "Welcome to The Force, Dear One"
         },
         {
             "sender": "Yaway",
@@ -13,12 +13,12 @@
             "content": "If there is a heaven, it's certain our animals are to be there. Their lives become so interwoven with our own, it would take more than an archangel to detangle them"
         },
         {
-            "sender": "Bueller",
-            "content": "Save Ferris"
+            "sender": "Optimus Prime",
+            "content": "Sometimes even the wisest of men and machines can be in error."
         },
         {
-            "sender": "Bueller",
-            "content": "Save Ferris"
+            "sender": "Khaleesi",
+            "content": "All men must die, but we are not men."
         }
     ]
 }
