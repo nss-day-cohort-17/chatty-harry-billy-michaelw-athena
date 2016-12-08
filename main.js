@@ -65,11 +65,11 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 //
 
     var getTheJson = new XMLHttpRequest()
-   getTheJson.addEventListener("load" , putTheJsonInMessageWrapper)
-   getTheJson.open('GET', "lightMessages.json")
-   getTheJson.send()
+    getTheJson.addEventListener("load", putTheJsonInMessageWrapper)
+    getTheJson.open('GET', "lightMessages.json")
+    getTheJson.send()
 
-    function putTheJsonInMessageWrapper(e) {
+     function putTheJsonInMessageWrapper(e) {
       jsonData = JSON.parse(e.target.responseText)
       var theFirstFiveMessages ="";
           for(var i = 0; i < jsonData.lightMessages.length; i++) {
@@ -81,7 +81,7 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
                     </div>
                   <div class="clear"></div>`
 
-// console.log(theFirstFiveMessages)
+//
 
            }  // endforloop
 
