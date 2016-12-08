@@ -1,9 +1,9 @@
 /************************
-LIGHT STYLES
+DEFAULT STYLES
 ************************/
 
 body {
-	font-family: Helvetica, sans-serif;
+	font-family: "novecento sans", sans-serif;
 	margin: 0;
 	background-color: lightgrey;
 	background-image: url();
@@ -12,17 +12,18 @@ body {
 
 }
 
-/*h1 {
-	text-align: center;
-}
-*/
 #wrapper {
-	background-color: white;
+	background: linear-gradient(174deg, #678fff, #ffffff);
 	height: 100%;
 	width: 70%;
 	margin-left: 15%;
 	box-shadow: .5px 1px 2px 3px grey;
 }
+
+
+/*****************************
+HEADER/LOGO
+*****************************/
 
 #headerNavigation {
 	background-color: darkgrey;
@@ -33,32 +34,57 @@ body {
 	text-align: center;
 	position: fixed;
 	border-bottom: 1px solid black;
+	z-index: 3;
 }
+
+
+
+#logo {
+	font-family: Frontage, sans-serif;
+	text-shadow: 1px 1px 2px white;
+	overflow: hidden;
+	padding-top: 5%;
+}
+
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/*___________________________*/
+
 
 #messageWrapper {
 	width: 100%;
 	height: 500px;
 	padding: 5%;
-
 	overflow: scroll;
-
 	padding-top: 325px;
-
 }
 
 
 #holdingCheckboxes {
-	padding-top: 15%;
+	padding-top: 3%;
 }
-
-
 
 
 #holdingMessageAndButton {
 	padding-top: 1.5%;
 
 }
-
 
 
 #darkCheckbox {
@@ -84,6 +110,47 @@ label {
 }
 
 
+/**************************
+TEXT MESSAGE STYLES
+**************************/
+
+#sectionWrapper {
+  max-width: 50%;
+  margin: 50px auto;
+  word-wrap: break-word;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+
+.clear {
+  clear: both;
+}
+
+.from-me {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: #0B93F6;
+  border-radius: 25px;
+  float: right;
+  margin-bottom: 5px;
+  clear: right;
+}
+
+
+.from-them {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  color: black;
+  float: left;
+}
+
+
+
+
+
 
 
 
@@ -92,19 +159,82 @@ DARK STYLES
 ************************/
 
 /*body {
-	background-color: black;
-	font-color: white;
-	}
+	background: black;
+}
 
 #wrapper {
-	background-color: grey;
-	font-color: white;
+	background: linear-gradient(188deg, #ff0404, #fdf813);
+	height: 100%;
+	width: 70%;
+	margin-left: 15%;
+	box-shadow: .5px 1px 2px 3px black	;
+	color: white;
+}
 
+
+#headerNavigation {
+	background-color: grey;
+	width: 70%;
+	height: 300px;
+	background-image: url(https://media.giphy.com/media/4TMqcN59kg3Yc/giphy.gif);
+	background-size: 100%;
+	text-align: center;
+	position: fixed;
+	border-bottom: 1px solid black;
+	z-index: 3;
+}
+
+#logo {
+	font-family: Frontage, sans-serif;
+	text-shadow: 1px 1px 2px grey;
+	overflow: hidden;
+	padding-top: 5%;
+	color: red;
+}
+
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.from-me {
+  position: relative;
+  padding: 10px 20px;
+  color: white;
+  background: black;
+  border-radius: 25px;
+  float: right;
+  margin-bottom: 5px;
+  clear: right;
+}
+
+
+.from-them {
+  position: relative;
+  padding: 10px 20px;
+  background: #E5E5EA;
+  border-radius: 25px;
+  color: black;
+  float: left;
 }*/
 
 
+
 /************************
-LIGHT STYLES
+LARGE STYLES
 ************************/
 
 /*body {
