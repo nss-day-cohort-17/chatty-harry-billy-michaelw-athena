@@ -45,6 +45,6 @@ function clearContent()
 }
 
 
-deleteThisMessage.addEventListener('click', function(e) {
-    document.getElementById("messagebubble")
-}
+// deleteThisMessage.addEventListener('click', function(e) {
+//     document.getElementById("messagebubble")
+// }

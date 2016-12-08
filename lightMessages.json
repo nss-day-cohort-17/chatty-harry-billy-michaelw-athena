@@ -1,0 +1,24 @@
+{
+   "lightMessages" : [
+       {
+           "sender" : "Luke",
+           "content" : "Welcome to The Force, dear one",
+       },
+       {
+           "sender" : "Yaway",
+           "content" : "You are love",
+       },
+       {
+           "sender" : "Michael",
+           "content" : "If there is a heaven, it's certain our animals are to be there. Their lives become so interwoven with our own, it would take more than an archangel to detangle them",
+       }
+       {
+           "sender" : "Bueller",
+           "content" : "Save Ferris",
+       }
+       {
+           "sender" : "Bueller",
+           "content" : "Save Ferris",
+       }
+   ]
+}

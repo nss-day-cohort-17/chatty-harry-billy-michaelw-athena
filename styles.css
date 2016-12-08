@@ -6,37 +6,45 @@ body {
 	font-family: Helvetica, sans-serif;
 	margin: 0;
 	background-color: lightgrey;
+	background-image: url();
+	background-repeat: none;
+	background-size: 100%;
+
 }
 
-h1 {
+/*h1 {
 	text-align: center;
 }
-
+*/
 #wrapper {
 	background-color: white;
-	width: 80%;
-	margin-left: 10%;
-
+	height: 100%;
+	width: 70%;
+	margin-left: 15%;
+	box-shadow: .5px 1px 2px 3px grey;
 }
 
 #headerNavigation {
 	background-color: darkgrey;
-	width: 100%;
-	height: 250px;
-	background-image: url(http://www.godisreal.today/wp-content/uploads/2013/12/proof-of-heaven-real2-720x420.jpg);
-	background-repeat: none;
+	width: 70%;
+	height: 300px;
+	background-image: url(https://media.giphy.com/media/F3nOfJiy8uKsM/giphy.gif);
+	background-size: 100%;
 	text-align: center;
+	position: fixed;
+	border-bottom: 1px solid black;
 }
 
 #messageWrapper {
 	width: 100%;
 	height: 500px;
 	padding: 5%;
+	padding-top: 325px;
 }
 
 
 #holdingCheckboxes {
-	padding-top: 13%;
+	padding-top: 15%;
 }
 
 
@@ -53,21 +61,23 @@ h1 {
 
 }
 
+label {
+	padding-right: 2%;
+}
+
 
 #enterMessageTextBox {
-	font-size: 2em;
+	font-size: 1.5em;
+	width: 30%;
+	cursor: text;
 
 }
 
 
 #clearMessagesButton {
-	padding: 1%;
+	padding: .5% .5% .4% .5%;
+	cursor: pointer;
 }
-
-
-
-
-
 
 
 
@@ -77,16 +87,38 @@ h1 {
 DARK STYLES
 ************************/
 
-/************************
-NAVIGATION
-************************/
+/*body {
+	background-color: black;
+	font-color: white;
+	}
+
+#wrapper {
+	background-color: grey;
+	font-color: white;
+
+}*/
+
 
 /************************
 LIGHT STYLES
 ************************/
 
+/*body {
+	font-size: 2em;
+
+}*/
+
+/************************
+NAVIGATION
+************************/
+
+
+
 /************************
 FOOTER
 ************************/
 
-#footer
+#footer {
+	text-align: center;
+	padding: 2%;
+}
