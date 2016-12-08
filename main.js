@@ -16,10 +16,10 @@ messageTextBox.addEventListener('keypress', function(e) {
      // this creates the container for typed content
      //
 
-      newVariable += `<div class="messageBubble">
-                           <div class="words">${typedContent} </div>
-                             <button class="deleteThisMessage">Delete</button>
-                       </div>`
+      // newVariable += `<div class="messageBubble">
+      //                      <div class="words">${typedContent} </div>
+      //                        <button class="deleteThisMessage">Delete</button>
+      //                  </div>`
 
 
           document.getElementById("messageWrapper").innerHTML +=  newVariable
@@ -32,7 +32,7 @@ messageTextBox.addEventListener('keypress', function(e) {
                            <button class="deleteThisMessage">deleteThisMessage</button></span>
                         </div>`
 
-          document.getElementById("sectionWrapper").innerHTML +=  newVariable
+          document.getElementById("messageWrapper").innerHTML +=  newVariable
 
               clearContent()
   }
@@ -102,7 +102,7 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
           for(var i = 0; i < jsonData.lightMessages.length; i++) {
                 theFirstFiveMessages += `<div class="clear"></div>
                                         <div class="from-them">
-                                          <span><p>${jsonData.lightMessages[i].sender} says:</p> <p>${jsonData.lightMessages[i].content}</p><span>
+                                          <span><p>${jsonData.lightMessages[i].sender} says:</p> <p>${jsonData.lightMessages[i].content}</p></span>
                                         </div>
                                       <div class="clear"></div>`
 
@@ -115,8 +115,6 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 
     }
 
-
             }  // endforloop
 
-          document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
-    }
+
