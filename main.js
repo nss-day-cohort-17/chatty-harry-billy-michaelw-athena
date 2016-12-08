@@ -45,6 +45,17 @@ function clearContent()
 }
 
 
-deleteThisMessage.addEventListener('click', function(e) {
-    document.getElementById("messagebubble")
+//
+//function for removal
+//
+function removeTheMessageBubbles() {
+  var clearTheBox = document.getElementById('messageWrapper')
+  clearTheBox.innerHTML = ""
+
+
+
 }
+
+// // I want to click the clear messages and change the content of #messagewrapper to nothing
+// event listener on button click
+document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
