@@ -29,15 +29,15 @@ messageTextBox.addEventListener('keypress', function(e) {
 
               clearContent()
 
-      // newVariable += `<div class="from-me">
-      //                     <span><div class="from-me">Me: </div>
-      //                     <div class="words">${typedContent} </div>
-      //                      <button class="deleteThisMessage">deleteThisMessage</button></span>
-      //                   </div>`
+      newVariable += `<div class="from-me">
+                          <span><div class="from-me">Me: </div>
+                          <div class="words">${typedContent} </div>
+                           <button class="deleteThisMessage">deleteThisMessage</button></span>
+                        </div>`
 
-      //     document.getElementById("sectionWrapper").innerHTML +=  newVariable
+          document.getElementById("sectionWrapper").innerHTML +=  newVariable
 
-      //         clearContent()
+              clearContent()
   }
 })
 
@@ -107,5 +107,5 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
             }  // endforloop
 
 
-//           document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
+          document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
     }
