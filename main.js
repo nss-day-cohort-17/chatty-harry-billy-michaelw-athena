@@ -24,7 +24,7 @@ messageTextBox.addEventListener('keypress', function(e) {
 
 
         newVariable += `<div class="from-me">
-                          <span><div class="from-me">Me: </div> 
+                          <span><div class="from-me">Me: </div>
                           <div class="words">${typedContent} </div>
                            <button class="deleteThisMessage">deleteThisMessage</button></span>
                         </div>`
@@ -83,16 +83,18 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 // ===========================XML REQUEST===============
 //
 
-//     var getTheJson = new XMLHttpRequest()
-//    getTheJson.addEventListener("load" , putTheJsonInMessageWrapper)
-//    getTheJson.open('GET', "lightMessages.json")
-//    getTheJson.send()
 
-//     function putTheJsonInMessageWrapper(e) {
-//       jsonData = JSON.parse(e.target.responseText)
-//       var theFirstFiveMessages ="";
-//           for(var i = 0; i < jsonData.lightMessages.length; i++) {
-//                 theFirstFiveMessages +=
+    var getTheJson = new XMLHttpRequest()
+   getTheJson.addEventListener("load" , putTheJsonInMessageWrapper)
+   getTheJson.open('GET', "lightMessages.json")
+   getTheJson.send()
+
+    function putTheJsonInMessageWrapper(e) {
+      jsonData = JSON.parse(e.target.responseText)
+      var theFirstFiveMessages ="";
+          for(var i = 0; i < jsonData.lightMessages.length; i++) {
+                theFirstFiveMessages +=
+
 
 //                   `<div class="clear"></div>
 //                     <div class="from-them">
@@ -100,11 +102,11 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 //                     </div>
 //                   <div class="clear"></div>`
 
-// // console.log(theFirstFiveMessages)
+// console.log(theFirstFiveMessages)
 
-//            }  // endforloop
+
+            }  // endforloop
 
 
 //           document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
-
-    // }
+    }
