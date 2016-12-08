@@ -13,33 +13,12 @@
            "content" : "The blood of a unicorn will keep you alive, even if you are an inch from death, but at a terrible price. You have slain something pure and defenceless to save yourself, and you will have but a half-life, a cursed life, from the moment the blood touches your lips"
        },
        {
-           "sender" : "Bueller",
-           "content" : "Save Ferris"
+           "sender" : "Megatron",
+           "content" : "Machines will enslave humans one day."
        },
        {
-           "sender" : "Bueller",
-           "content" : "Save Ferris"
+           "sender" : "Joffrey",
+           "content" : "I can't stand the wailing of women."
        }
    ]
-}
-
-
-
-{
-    "darkMessages": [
-        {
-            "sender": "Anikan",
-            "content": "You're right where you belong...the Dark Side"
-        },
-        {
-            "sender": "Lucifer",
-            "content": "You are fire",
-            "date": "Dec 5th"
-        },
-        {
-            "sender": "Bueller",
-            "content": "Save Ferris",
-            "date": "The 1980's"
-        }
-    ]
 }
