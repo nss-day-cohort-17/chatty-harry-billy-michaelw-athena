@@ -31,7 +31,7 @@ messageTextBox.addEventListener('keypress', function(e) {
 
                           //   // // //  and put iti into the #messagewrapper
 
-                                document.getElementById("messageWrapper").innerHTML +=  newVariable
+                                document.getElementById("sectionWrapper").innerHTML +=  newVariable
 
                                     clearContent()
 
@@ -81,11 +81,11 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
                     </div>
                   <div class="clear"></div>`
 
-console.log(theFirstFiveMessages)
+// console.log(theFirstFiveMessages)
 
            }  // endforloop
 
 
-          document.getElementById("messageWrapper").innerHTML = theFirstFiveMessages
+          document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
 
     }
