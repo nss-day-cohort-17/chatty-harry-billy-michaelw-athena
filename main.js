@@ -22,9 +22,6 @@ messageTextBox.addEventListener('keypress', function(e) {
                        </div>`
 
 
-
-
-
           document.getElementById("messageWrapper").innerHTML +=  newVariable
 
               clearContent()
@@ -66,14 +63,20 @@ function clearContent()
 
 
 //
-//this is the part where the  #clearbutton clears the messages
+//this is the part where the  #clearbutton clears the messages in #messagewrapper
 //
-function removeTheMessageBubbles() {
+function removeTheMessageBubbles(e) {
+
   var clearTheBox = document.getElementById('messageWrapper')
-  clearTheBox.innerHTML = ""
+      clearTheBox.innerHTML =""
+//
+
+
+
 
 
 }
+
 
 document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
 
@@ -102,10 +105,12 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 
 
 // console.log(theFirstFiveMessages)
+          document.getElementById("messageWrapper").innerHTML = theFirstFiveMessages
 
 
             }  // endforloop
 
-
           document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
     }
+
+    document.getElementsByClassName("disableTheButton")[0].setAttribute("disabled", true);
