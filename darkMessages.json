@@ -1,0 +1,45 @@
+{
+   "darkMessages" : [
+       {
+           "sender" : "Anikan",
+           "content" : "You're right where you belong...the Dark Side"
+       },
+       {
+           "sender" : "Lucifer",
+           "content" : "You are fire"
+       },
+       {
+           "sender" : "Amduscias",
+           "content" : "The blood of a unicorn will keep you alive, even if you are an inch from death, but at a terrible price. You have slain something pure and defenceless to save yourself, and you will have but a half-life, a cursed life, from the moment the blood touches your lips"
+       },
+       {
+           "sender" : "Bueller",
+           "content" : "Save Ferris"
+       },
+       {
+           "sender" : "Bueller",
+           "content" : "Save Ferris"
+       }
+   ]
+}
+
+
+
+{
+    "darkMessages": [
+        {
+            "sender": "Anikan",
+            "content": "You're right where you belong...the Dark Side"
+        },
+        {
+            "sender": "Lucifer",
+            "content": "You are fire",
+            "date": "Dec 5th"
+        },
+        {
+            "sender": "Bueller",
+            "content": "Save Ferris",
+            "date": "The 1980's"
+        }
+    ]
+}
