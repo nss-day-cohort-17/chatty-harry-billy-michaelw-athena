@@ -1,5 +1,6 @@
 
 var messageTextBox = document.getElementById("enterMessageTextBox");
+var jsonData;
 
 var storingTheMessage;
 messageTextBox.addEventListener('keypress', function(e) {
@@ -23,14 +24,14 @@ messageTextBox.addEventListener('keypress', function(e) {
                            // this creates the container for typed content
                            //
 
-                            newVariable += `<div class="messageBubble">
-                                                 <div class="words">${typedContent} </div>
-                                                   <button class="deleteThisMessage">buttonme</button>
+                            newVariable += `<div class="from-me">
+                                                <span><div class="from-me">Me: </div> <div class="words">${typedContent} </div></span>
+                                                   <button class="deleteThisMessage">.deleteThisMessage</button>
                                              </div>`
 
                           //   // // //  and put iti into the #messagewrapper
 
-                                document.getElementById("messageWrapper").innerHTML +=  newVariable
+                                document.getElementById("sectionWrapper").innerHTML +=  newVariable
 
                                     clearContent()
 
@@ -58,3 +59,33 @@ function removeTheMessageBubbles() {
 
 document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
 
+
+
+// ===========================XML REQUEST===============
+//
+
+    var getTheJson = new XMLHttpRequest()
+   getTheJson.addEventListener("load" , putTheJsonInMessageWrapper)
+   getTheJson.open('GET', "lightMessages.json")
+   getTheJson.send()
+
+    function putTheJsonInMessageWrapper(e) {
+      jsonData = JSON.parse(e.target.responseText)
+      var theFirstFiveMessages ="";
+          for(var i = 0; i < jsonData.lightMessages.length; i++) {
+                theFirstFiveMessages +=
+
+                  `<div class="clear"></div>
+                    <div class="from-them">
+                       <span><p>${jsonData.lightMessages[i].sender} says:</p> <p>${jsonData.lightMessages[i].content}</p><span>
+                    </div>
+                  <div class="clear"></div>`
+
+// console.log(theFirstFiveMessages)
+
+           }  // endforloop
+
+
+          document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
+
+    }
