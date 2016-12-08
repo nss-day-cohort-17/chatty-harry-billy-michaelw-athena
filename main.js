@@ -89,3 +89,6 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
           document.getElementById("sectionWrapper").innerHTML = theFirstFiveMessages
 
     }
+
+
+    // i need to call the json function when the clear button is clicked
