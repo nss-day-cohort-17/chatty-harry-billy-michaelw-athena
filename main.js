@@ -114,7 +114,6 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
 
 
     }
-          document.getElementById("messagewrapper").innerHTML = theFirstFiveMessages
 
             }  // endforloop
 
