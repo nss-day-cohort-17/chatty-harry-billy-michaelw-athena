@@ -135,6 +135,9 @@ TEXT MESSAGE STYLES
   float: right;
   margin-bottom: 5px;
   clear: right;
+  width: 40%;
+  margin-right: 10%;
+
 }
 
 
@@ -147,6 +150,7 @@ TEXT MESSAGE STYLES
   color: black;
   float: left;
   margin-bottom: 5px;
+  width: 40%;
 }
 
 
@@ -160,7 +164,7 @@ TEXT MESSAGE STYLES
 DARK STYLES
 ************************/
 
-/*body {
+/*body.darkTheme {
 	background: black;
 }
 
