@@ -18,26 +18,26 @@ messageTextBox.addEventListener('keypress', function(e) {
 
       newVariable += `<div class="messageBubble">
                            <div class="words">${typedContent} </div>
-                             <button class="deleteThisMessage">deleteThisMessage</button>
+                             <button class="deleteThisMessage">Delete</button>
                        </div>`
 
 
 
-        newVariable += `<div class="from-me">
-                          <span><div class="from-me">Me: </div>
-                          <div class="words">${typedContent} </div>
-                           <button class="deleteThisMessage">deleteThisMessage</button></span>
-                        </div>`
 
 
           document.getElementById("messageWrapper").innerHTML +=  newVariable
 
               clearContent()
 
+      // newVariable += `<div class="from-me">
+      //                     <span><div class="from-me">Me: </div>
+      //                     <div class="words">${typedContent} </div>
+      //                      <button class="deleteThisMessage">deleteThisMessage</button></span>
+      //                   </div>`
 
-          document.getElementById("sectionWrapper").innerHTML +=  newVariable
+      //     document.getElementById("sectionWrapper").innerHTML +=  newVariable
 
-              clearContent()
+      //         clearContent()
   }
 })
 
@@ -46,9 +46,8 @@ messageTextBox.addEventListener('keypress', function(e) {
 // var oneMessage = getElementById("messageBubble").innerHTML.value;
 document.querySelector("body").addEventListener("click", deleteOneMessage);
 function deleteOneMessage(e) {
-  console.log(e)
   if (e.target.className === "deleteThisMessage") {
-    e.parentElement = "";
+    e.target.parentElement.remove();
 }
 }
 //***********************************
@@ -93,14 +92,14 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
       jsonData = JSON.parse(e.target.responseText)
       var theFirstFiveMessages ="";
           for(var i = 0; i < jsonData.lightMessages.length; i++) {
-                theFirstFiveMessages +=
+                theFirstFiveMessages += `<div class="clear"></div>
+                                        <div class="from-them">
+                                          <span><p>${jsonData.lightMessages[i].sender} says:</p> <p>${jsonData.lightMessages[i].content}</p><span>
+                                        </div>
+                                      <div class="clear"></div>`
 
 
-//                   `<div class="clear"></div>
-//                     <div class="from-them">
-//                        <span><p>${jsonData.lightMessages[i].sender} says:</p> <p>${jsonData.lightMessages[i].content}</p><span>
-//                     </div>
-//                   <div class="clear"></div>`
+
 
 // console.log(theFirstFiveMessages)
 
