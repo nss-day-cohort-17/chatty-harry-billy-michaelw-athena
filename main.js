@@ -45,6 +45,16 @@ function clearContent()
 }
 
 
-// deleteThisMessage.addEventListener('click', function(e) {
-//     document.getElementById("messagebubble")
-// }
+
+//
+//this is the part where the  #clearbutton clears the messages
+//
+function removeTheMessageBubbles() {
+  var clearTheBox = document.getElementById('messageWrapper')
+  clearTheBox.innerHTML = ""
+
+
+}
+
+document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
+
