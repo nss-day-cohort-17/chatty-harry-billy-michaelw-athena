@@ -45,6 +45,7 @@ function clearContent()
 }
 
 
+
 //
 //function for removal
 //
@@ -59,3 +60,4 @@ function removeTheMessageBubbles() {
 // // I want to click the clear messages and change the content of #messagewrapper to nothing
 // event listener on button click
 document.getElementById("clearMessagesButton").addEventListener('click', removeTheMessageBubbles)
+
