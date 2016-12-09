@@ -27,9 +27,9 @@ messageTextBox.addEventListener('keypress', function(e) {
               clearContent()
 
       newVariable += `<div class="from-me">
-                          <span><div class="from-me">Me: </div>
+                          <div class="from-me"></div>
                           <div class="words">${typedContent} </div>
-                           <button class="deleteThisMessage">deleteThisMessage</button></span>
+                           <button class="deleteThisMessage">Delete</button>
                         </div>`
 
           document.getElementById("messageWrapper").innerHTML +=  newVariable
@@ -116,5 +116,14 @@ document.getElementById("clearMessagesButton").addEventListener('click', removeT
     }
 
             }  // endforloop
+
+
+
+
+// function addDarkStyles (e) {
+
+//     if (document.getElementById('darkCheckbox').checked && document.getElementById('lightCheckbox').checked) {
+
+//       document.querySelector('body').className = 'wrapper-Dark';
 
 
