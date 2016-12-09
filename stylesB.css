@@ -1,0 +1,377 @@
+/********************************
+DEFAULT STYLES
+********************************/
+
+
+body {
+	font-family: "novecento sans", sans-serif;
+	margin: 0;
+	background-color: lightgrey;
+	background-image: url();
+	background-repeat: none;
+	background-size: 100%;
+}
+
+#wrapper {
+	background: linear-gradient(0deg, #f5fffc, #767676);
+	height: 100%;
+	width: 25%;
+	box-shadow: 2px 2px 3px 4px lightgrey;
+	border-radius: 40px;
+	margin-left: 38%;
+	margin-top: 2%;
+	border: .5px solid slategrey;
+}
+
+
+/******************************
+video background styles
+*******************************/
+
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+/*******************************
+-- END video background styles
+*******************************/
+
+
+
+
+
+/*********************************
+NAVIGATION/LOGO
+*********************************/
+
+#headerNavigation {
+	background-color: darkgrey;
+	width: 25%;
+	height: 140px;
+	background-image: url(https://media.giphy.com/media/ZXOHqp3h9EEVy/giphy.gif);
+	background-size: 150%;
+	text-align: center;
+	position: fixed;
+	border-bottom: 1px solid black;
+	z-index: 3;
+	margin: 0;
+	border-top-right-radius:40px;
+	border-top-left-radius: 40px;
+}
+
+#logo {
+	font-family: Frontage, sans-serif;
+	text-shadow: 1px 1px 2px white;
+	overflow: hidden;
+	letter-spacing: -.5em;
+	font-size: 1em;
+	padding: 2%;
+	padding-bottom: 0;
+}
+
+h1 {
+	margin: 18px 8px 15px 5px;
+}
+
+/*h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}*/
+
+
+
+/*********************************
+MESSAGE and MESSAGE BUBBLE STYLES
+*********************************/
+
+
+#messageWrapper {
+	width: 100%;
+	height: 310px;
+	overflow: scroll;
+	padding: 140px 20px 30px 20px;
+	border-radius: 40px;
+	margin-bottom: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.from-me {
+  position: relative;
+  padding: 5px 15px;
+  color: white;
+  background: #75a3a3;
+  border-radius: 25px;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  clear: right;
+  width: 55%;
+  margin-right: 10%;
+}
+
+.from-them {
+  position: relative;
+  padding: 3px 15px;
+  background: white;
+  color: black;
+  border-radius: 25px;
+  color: black;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 55%;
+}
+
+
+/*********************************
+CHECKBOX, tEXT BOX  and BUTTON STYLES
+*********************************/
+
+#holdingMessageAndButton {
+	padding: 2px 5px 15px 5px;
+}
+
+
+#enterMessageTextBox {
+	font-size: 1em;
+	width: 60%;
+	cursor: text;
+	border-radius: 5px;
+}
+
+#clearMessagesButton {
+	padding: .5% .5% .5% .5%;
+	cursor: pointer;
+	color: black;
+	border-radius: 5px;
+	background-color: white;
+}
+
+label {
+	font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*_______________________________________________________
+_____________________________________________________*/
+/******************************
+DARK STYLES
+*******************************/
+
+/*______________________________
+DARK General Styles*/
+
+#wrapper-DARK {
+	background: linear-gradient(0deg, #f0d021, #b73c03);
+	background-size: 400% 400%;
+
+	-webkit-animation: AnimationName 38s ease infinite;
+	-moz-animation: AnimationName 38s ease infinite;
+	animation: AnimationName 38s ease infinite;
+
+	height: 100%;
+	width: 25%;
+	box-shadow: 2px 2px 3px 4px lightgrey;
+	border-radius: 40px;
+	margin-left: 38%;
+	margin-top: 2%;
+	border: .5px solid slategrey;
+}
+
+/*______________________________
+DARK Nav Bar*/
+
+#headerNavigation-DARK {
+	background-color: darkgrey;
+	width: 25%;
+	height: 140px;
+	background-image: url();
+	background-size: 150%;
+	text-align: center;
+	position: fixed;
+	border-bottom: 1px solid black;
+	z-index: 3;
+	margin: 0;
+	border-top-right-radius:40px;
+	border-top-left-radius: 40px;
+}
+
+
+
+/*______________________________
+DARK video background styles*/
+
+
+
+.fullscreen-bg-DARK {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video-DARK {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video-DARK {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video-DARK {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+
+
+/*______________________________
+DARK MESSAGE and MESSAGE BUBBLE STYLES*/
+
+
+#messageWrapper-DARK {
+	width: 100%;
+	height: 310px;
+	overflow: scroll;
+	padding: 140px 20px 30px 20px;
+	border-radius: 40px;
+	margin-bottom: 5px;
+}
+
+.clear {
+  clear: both;
+}
+
+.from-me-DARK {
+  position: relative;
+  padding: 5px 15px;
+  color: white;
+  background: black;
+  border-radius: 25px;
+  float: right;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  clear: right;
+  width: 55%;
+  margin-right: 10%;
+}
+
+.from-them-DARK {
+  position: relative;
+  padding: 3px 15px;
+  background: white;
+  color: black;
+  border-radius: 25px;
+  color: black;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  width: 55%;
+}
+
+
+
+
+/*______________________________
+DARK FOOTER*/
+
+
+footer-DARK {
+	text-align: center;
+	color: white;
+	font-size: 1.1em;
+}
+
+
+
+
+
+
+/*********************************
+FOOTER
+*********************************/
+
+
+footer {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
